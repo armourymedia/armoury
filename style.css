@@ -1,0 +1,155 @@
+/*!
+Theme Name: Armoury
+Theme URI: https://www.armourymedia.com/
+Description: A custom child theme crafted with care by Armoury Media.
+Author: Armoury Media
+Author URI: https://www.armourymedia.com/
+Template: kadence
+Version: 1.0.0
+Text Domain: armoury
+*/
+
+/* Post Archive
+-------------------------------------------------------------- */
+.post-archive-title {
+    margin-bottom: var(--global-xl-spacing);
+}
+
+@media (max-width: 767px) {
+    .post-archive-title {
+        margin-bottom: var(--global-md-spacing);
+    }
+}
+
+.post-archive .loop-entry .entry-summary p {
+    margin: 0;
+}
+
+/* Gallery
+-------------------------------------------------------------- */
+.kb-gallery-ul .kadence-blocks-gallery-item .kadence-blocks-gallery-item-inner figure .kb-gallery-image-contain.kadence-blocks-gallery-intrinsic img,
+.wp-block-kadence-advancedgallery .kb-gallery-type-tiles .kadence-blocks-gallery-item .kadence-blocks-gallery-item-inner img,
+.kb-gallery-ul.kb-gallery-type-fluidcarousel .kt-blocks-carousel figure .kb-gal-image-radius img,
+.wp-embed-responsive .wp-has-aspect-ratio iframe {
+    border-radius: 0;
+}
+
+/* Player Controls
+-------------------------------------------------------------- */
+.plyr__control--overlaid,
+.plyr--audio .plyr__control.plyr__tab-focus,
+.plyr--audio .plyr__control:hover,
+.plyr--audio .plyr__control[aria-expanded=true],
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded=true],
+.plyr__control--overlaid:focus,
+.plyr__control--overlaid:hover {
+    background: var(--global-palette1);
+}
+
+.plyr--full-ui input[type=range] {
+    color: var(--global-palette1);
+}
+
+/* Share Container
+-------------------------------------------------------------- */
+.kt_simple_share_container {
+    gap: 10px !important;
+}
+
+.kt_simple_share_container a {
+    flex: 1;
+    height: 40px !important;
+    border-radius: 0.25rem !important;
+}
+
+/* Fluent Forms
+-------------------------------------------------------------- */
+.frm-fluent-form .choices__list--dropdown {
+    max-height: 362px !important;
+}
+
+.frm-fluent-form .choices__inner {
+    border-radius: 7px !important;
+}
+
+select.ff-el-form-control:not([size]):not([multiple]) {
+    height: 48px !important;
+}
+
+.frm-fluent-form .choices__list--single {
+    padding: 10px 15px !important;
+}
+
+.frm-fluent-form .choices.is-disabled .choices__inner {
+    background-color: #e9ecef;
+}
+
+.choices__list.choices__list--dropdown.has-parameter {
+    display: none !important;
+}
+
+/* Bunny Stream Video Embed
+-------------------------------------------------------------- */
+a[href*="iframe.mediadelivery.net/play"],
+.kb-advanced-image-link[href*="iframe.mediadelivery.net/play"] {
+    position: relative;
+    display: block;
+}
+
+a[href*="iframe.mediadelivery.net/play"]::before,
+.kb-advanced-image-link[href*="iframe.mediadelivery.net/play"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+a[href*="iframe.mediadelivery.net/play"]:hover::before,
+.kb-advanced-image-link[href*="iframe.mediadelivery.net/play"]:hover::before {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+a[href*="iframe.mediadelivery.net/play"]::after,
+.kb-advanced-image-link[href*="iframe.mediadelivery.net/play"]::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' fill='rgb(255,255,255)' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z'%3E%3C/path%3E%3C/svg%3E");
+    background-size: contain;
+    pointer-events: none;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 2;
+}
+
+a[href*="iframe.mediadelivery.net/play"]:hover::after,
+.kb-advanced-image-link[href*="iframe.mediadelivery.net/play"]:hover::after {
+    transform: translate(-50%, -50%) scale(1.1);
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.5));
+}
+
+.armoury-video-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+    width: 100%;
+}
+
+.armoury-video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

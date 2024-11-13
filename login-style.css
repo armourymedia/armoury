@@ -1,0 +1,104 @@
+/**
+ * Custom styles for WordPress login page
+ *
+ * @package AM
+ */
+
+:root {
+    --brand-colour: #1a7e60;
+    --light-grey: #f7f7f7;
+    --input-border: .0625rem;
+    --box-shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Hide Elements
+-------------------------------------------------------------- */
+.login h1,
+.login .language-switcher {
+    display: none;
+}
+
+/* Form Layout
+-------------------------------------------------------------- */
+.login form {
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 5px 25px -5px var(--box-shadow-color);
+    padding: 2rem;
+}
+
+/* Form Inputs
+-------------------------------------------------------------- */
+.login form .input,
+.login input[type="text"],
+.login input[type="password"] {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 100%;
+    border-width: var(--input-border);
+    padding: 10px 12px;
+    margin: 0 0 16px 0;
+    min-height: 40px;
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+    border-color: var(--brand-colour);
+    box-shadow: 0 0 0 1px var(--brand-colour);
+}
+
+/* Buttons
+-------------------------------------------------------------- */
+.login .button-primary {
+    background-color: var(--brand-colour);
+    border-color: var(--brand-colour);
+    color: #ffffff;
+}
+
+.login .button-primary:hover,
+.login .button-primary:focus {
+    background-color: var(--brand-colour);
+    border-color: var(--brand-colour);
+}
+
+.wp-core-ui .button,
+.wp-core-ui .button-secondary {
+    background-color: var(--light-grey);
+    border-color: var(--brand-colour);
+    color: var(--brand-colour);
+}
+
+/* Password Visibility Toggle
+-------------------------------------------------------------- */
+.login .button.wp-hide-pw {
+    color: var(--brand-colour);
+}
+
+.login .button.wp-hide-pw:focus {
+    border: none;
+    box-shadow: none;
+}
+
+/* Navigation
+-------------------------------------------------------------- */
+.login #backtoblog,
+.login #nav {
+    text-align: center;
+}
+
+.login #backtoblog a,
+.login #nav a,
+.login a {
+    color: var(--brand-colour);
+}
+
+.login #backtoblog a:hover,
+.login #nav a:hover {
+    color: var(--brand-colour);
+}
+
+/* Two-Factor Authentication
+-------------------------------------------------------------- */
+.login label[for="patchstack_2fa"] {
+    width: 100%;
+}
