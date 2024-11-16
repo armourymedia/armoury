@@ -1,6 +1,6 @@
 # Armoury Child Theme
 
-A professional WordPress child theme for Kadence, crafted by Armoury Media.
+A custom WordPress child theme for Kadence.
 
 ## Requirements
 
@@ -12,7 +12,7 @@ A professional WordPress child theme for Kadence, crafted by Armoury Media.
 ## Features
 
 - Custom login page styling
-- Bunny Stream video embed support
+- Bunny Stream video embeds
 - Clean, maintainable code
 - Performance optimized
 
