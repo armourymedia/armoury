@@ -9,7 +9,7 @@ Version: 1.0.0
 Text Domain: armoury
 */
 
-/* Post Archive
+/* Kadence
 -------------------------------------------------------------- */
 .post-archive-title {
     margin-bottom: var(--global-xl-spacing);
@@ -25,8 +25,6 @@ Text Domain: armoury
     margin: 0;
 }
 
-/* Gallery
--------------------------------------------------------------- */
 .kb-gallery-ul .kadence-blocks-gallery-item .kadence-blocks-gallery-item-inner figure .kb-gallery-image-contain.kadence-blocks-gallery-intrinsic img,
 .wp-block-kadence-advancedgallery .kb-gallery-type-tiles .kadence-blocks-gallery-item .kadence-blocks-gallery-item-inner img,
 .kb-gallery-ul.kb-gallery-type-fluidcarousel .kt-blocks-carousel figure .kb-gal-image-radius img,
@@ -34,8 +32,6 @@ Text Domain: armoury
     border-radius: 0;
 }
 
-/* Player Controls
--------------------------------------------------------------- */
 .plyr__control--overlaid,
 .plyr--audio .plyr__control.plyr__tab-focus,
 .plyr--audio .plyr__control:hover,
@@ -52,7 +48,7 @@ Text Domain: armoury
     color: var(--global-palette1);
 }
 
-/* Share Container
+/* Kadence Simple Share
 -------------------------------------------------------------- */
 .kt_simple_share_container {
     gap: 10px !important;
@@ -88,6 +84,24 @@ select.ff-el-form-control:not([size]):not([multiple]) {
 
 .choices__list.choices__list--dropdown.has-parameter {
     display: none !important;
+}
+
+
+/* MailPoet
+-------------------------------------------------------------- */
+.mailpoet_paragraph {
+    margin-bottom: var(--global-sm-spacing);
+}
+
+.mailpoet_text_label,
+.mailpoet_textarea_label,
+.mailpoet_select_label,
+.mailpoet_radio_label,
+.mailpoet_checkbox_label,
+.mailpoet_list_label,
+.mailpoet_date_label,
+.mailpoet_paragraph legend.mailpoet_segment_label {
+    margin-bottom: 5px;
 }
 
 /* Bunny Stream Video Embed
