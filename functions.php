@@ -104,16 +104,3 @@ function am_youtube_thumbnail_resolution() {
     return 'maxresdefault';
 }
 add_filter( 'flying_press_youtube_placeholder_resolution', 'am_youtube_thumbnail_resolution' );
-
-/**
- * Add Fathom Analytics domain to FlyingPress self-hosted domains.
- *
- * @since 1.0.0
- * @param  array $domains List of domains to self-host.
- * @return array         Modified list of domains.
- */
-function am_selfhost_fathom( $domains ) {
-    $domains[] = 'cdn.usefathom.com';
-    return $domains;
-}
-add_filter( 'flying_press_selfhost_external_domains', 'am_selfhost_fathom' );
