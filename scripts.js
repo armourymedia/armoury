@@ -21,9 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
         iframe.src = videoUrl.replace('/play/', '/embed/');
         iframe.allow = 'accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;';
         iframe.allowFullscreen = true;
-        iframe.loading = 'lazy';
-        iframe.title = videoTitle; // Add title for accessibility
-        iframe.setAttribute('aria-label', videoTitle); // Add ARIA label
+        iframe.setAttribute('importance', 'high');
+        iframe.loading = 'eager';
+        iframe.title = videoTitle;
+        iframe.setAttribute('aria-label', videoTitle);
         return iframe;
     };
 
