@@ -25,13 +25,6 @@ Text Domain: armoury
     margin: 0;
 }
 
-.kb-gallery-ul .kadence-blocks-gallery-item .kadence-blocks-gallery-item-inner figure .kb-gallery-image-contain.kadence-blocks-gallery-intrinsic img,
-.wp-block-kadence-advancedgallery .kb-gallery-type-tiles .kadence-blocks-gallery-item .kadence-blocks-gallery-item-inner img,
-.kb-gallery-ul.kb-gallery-type-fluidcarousel .kt-blocks-carousel figure .kb-gal-image-radius img,
-.wp-embed-responsive .wp-has-aspect-ratio iframe {
-    border-radius: 0;
-}
-
 .plyr__control--overlaid,
 .plyr--audio .plyr__control.plyr__tab-focus,
 .plyr--audio .plyr__control:hover,
