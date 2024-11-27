@@ -25,6 +25,22 @@ Text Domain: armoury
     margin: 0;
 }
 
+.entry-content :where(.wp-block-image, .wp-block-kadence-image) img,
+.entry-content :where(.wp-block-image, .wp-block-kadence-image) iframe,
+.entry-content :where(.wp-block-embed-youtube) .flying-press-youtube img,
+.entry-content :where(.wp-block-embed-youtube) .flying-press-youtube iframe {
+    border-radius: 10px;
+}
+
+@media all and (max-width: 947px) {
+    .entry-content :where(.wp-block-image.alignwide, .wp-block-kadence-image.alignwide) img,
+    .entry-content :where(.wp-block-image.alignwide, .wp-block-kadence-image.alignwide) iframe,
+    .entry-content :where(.wp-block-embed-youtube) .flying-press-youtube img,
+    .entry-content :where(.wp-block-embed-youtube) .flying-press-youtube iframe {
+        border-radius: 0;
+    }
+}
+
 .plyr__control--overlaid,
 .plyr--audio .plyr__control.plyr__tab-focus,
 .plyr--audio .plyr__control:hover,
