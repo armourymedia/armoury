@@ -13,7 +13,6 @@
 
 /* Hide Elements
 -------------------------------------------------------------- */
-.login h1,
 .login .language-switcher {
     display: none;
 }
