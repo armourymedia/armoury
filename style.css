@@ -99,8 +99,8 @@ select.ff-el-form-control:not([size]):not([multiple]) {
 }
 
 .ff-message-success {
-    border: none;
-    box-shadow: none;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 /* MailPoet
