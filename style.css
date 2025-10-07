@@ -1,0 +1,127 @@
+/*!
+Theme Name: Armoury
+Theme URI: https://www.armourymedia.com/
+Description: A custom child theme crafted with care by Armoury Media.
+Author: Armoury Media
+Author URI: https://www.armourymedia.com/
+Template: kadence
+Version: 1.0.0
+Text Domain: armoury
+*/
+
+/* Kadence
+-------------------------------------------------------------- */
+.post-archive .loop-entry .entry-summary p {
+    margin: 0;
+}
+
+.entry-content :where(.wp-block-image.alignwide, .wp-block-kadence-image.alignwide) a,
+.entry-content .ae-video-wrapper {
+    display: block;
+}
+
+.entry-content :where(.wp-block-image, .wp-block-kadence-image) img,
+.entry-content :where(.wp-block-image, .wp-block-kadence-image) iframe,
+.entry-content .ae-video-wrapper {
+    border-radius: 10px;
+}
+
+@media all and (max-width: 947px) {
+    .entry-content :where(.wp-block-image.alignwide, .wp-block-kadence-image.alignwide) img,
+    .entry-content :where(.wp-block-image.alignwide, .wp-block-kadence-image.alignwide) iframe,
+    .entry-content .ae-video-wrapper {
+        border-radius: 0;
+    }
+}
+
+.plyr__control--overlaid,
+.plyr--audio .plyr__control.plyr__tab-focus,
+.plyr--audio .plyr__control:hover,
+.plyr--audio .plyr__control[aria-expanded=true],
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded=true],
+.plyr__control--overlaid:focus,
+.plyr__control--overlaid:hover {
+    background: var(--global-palette1);
+}
+
+.plyr--full-ui input[type=range] {
+    color: var(--global-palette1);
+}
+
+/* Kadence Simple Share
+-------------------------------------------------------------- */
+.kt_simple_share_container {
+    gap: 10px !important;
+}
+
+.kt_simple_share_container a {
+    flex: 1;
+    height: 40px !important;
+    border-radius: 0.25rem !important;
+}
+
+/* Fluent Forms
+-------------------------------------------------------------- */
+.frm-fluent-form .ff-el-group:has(.cf-turnstile) {
+    margin-bottom: 0 !important;
+}
+
+.frm-fluent-form .choices__list--dropdown {
+    max-height: 362px !important;
+}
+
+.frm-fluent-form .choices__inner {
+    border-radius: 7px !important;
+}
+
+select.ff-el-form-control:not([size]):not([multiple]) {
+    height: 48px !important;
+}
+
+.frm-fluent-form .choices__list--single {
+    padding: 10px 15px !important;
+}
+
+.frm-fluent-form .choices.is-disabled .choices__inner {
+    background-color: #e9ecef;
+}
+
+.choices__list.choices__list--dropdown.has-parameter {
+    display: none !important;
+}
+
+.ff-default textarea.ff-el-form-control {
+    line-height: 1.3;
+}
+
+.ff-message-success {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* MailPoet
+-------------------------------------------------------------- */
+.mailpoet_page p {
+    text-align: center;
+}
+
+.mailpoet_page p.mailpoet_paragraph {
+    text-align: left;
+}
+
+.mailpoet_paragraph {
+    margin-bottom: var(--global-sm-spacing);
+}
+
+.mailpoet_text_label,
+.mailpoet_textarea_label,
+.mailpoet_select_label,
+.mailpoet_radio_label,
+.mailpoet_checkbox_label,
+.mailpoet_list_label,
+.mailpoet_date_label,
+.mailpoet_paragraph legend.mailpoet_segment_label {
+    margin-bottom: 5px;
+}
